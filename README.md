@@ -1,34 +1,39 @@
-This project is a small Business Inteligence example using Metabase, an Open Source platform. 
-The demo can be found here https://baena.ai/demos/reliefjobs-dashboard
-The project brief can be found here https://baena.ai/projects/reliefweb-jobs-dashboard
-A more explanatory article can be found here https://baena.ai/articles/jobs-relief
-
 # 🌍 ReliefWeb Jobs Dashboard
 
-A real-time dashboard designed for humanitarian workers to visualize, search, and analyze job opportunities from [ReliefWeb](https://reliefweb.int/). This project leverages modern web technologies to simplify access to critical humanitarian career information.
-
-![Project Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+![Project Status](https://img.shields.io/badge/Production-green)
 ![Tech Stack](https://img.shields.io/badge/Stack-Nuxt%203%20%7C%20n8n%20%7C%20TailwindCSS-00DC82)
+
+A real-time Business Intelligence (BI) dashboard designed for humanitarian workers to visualize, search, and analyze job opportunities from [ReliefWeb](https://reliefweb.int/).
+
+## 🔗 Demo & Resources
+
+- **Live Demo:** [baena.ai/demos/reliefjobs-dashboard](https://baena.ai/demos/reliefjobs-dashboard)
+- **Project Brief:** [baena.ai/projects/reliefweb-jobs-dashboard](https://baena.ai/projects/reliefweb-jobs-dashboard)
+- **Explanatory Article:** [baena.ai/articles/jobs-relief](https://baena.ai/articles/jobs-relief)
 
 ## 📖 Description
 
-**2025-dashboard-reliefweb-jobs** is an Information Management (IM) tool that aggregates job data from the ReliefWeb API. It provides a user-friendly interface to filter jobs by organization, country, and career category. 
+**2025-dashboard-reliefweb-jobs** is an Information Management (IM) tool that aggregates job data specifically for the humanitarian sector. It utilizes the [ReliefWeb API](https://apidoc.reliefweb.int) to update job listings multiple times a day, providing a comprehensive view of opportunities from **July 2025** to the present.
 
-This project is part of a broader initiative to apply data analysis and automation (via n8n) to humanitarian workflows.
+The system is built on a self-hosted instance of [Metabase](https://www.metabase.com/), a powerful open-source Business Intelligence platform.
+
+> **Note:** While the Metabase dashboard layout export is not included (due to subscription limitations), this repository contains all the **n8n workflows** and **data queries** used to build the pipeline.
 
 ## ✨ Key Features
 
-* **Live Job Feed:** Fetches the latest humanitarian job postings directly from ReliefWeb.
-* **Advanced Filtering:** Sort jobs by *Country*, *Organization*, or *Job Type*.
-* **Data Visualization:** (Planned) Charts and metrics on job trends in the sector.
-* **Responsive Design:** optimized for desktop and mobile use.
+* **Live Job Feed:** Automatically fetches the latest humanitarian job postings.
+* **Advanced Filtering:** Filter by **Country**, **Organization**, or **Job Type**.
+* **Data Visualization:** Charts and metrics on job trends in the sector.
+* **Responsive Design:** Optimized for seamless use on desktop and mobile.
 
 ## 🛠️ Tech Stack
 
-* **Frontend Framework:** [Nuxt 3](https://nuxt.com/) (Vue.js)
-* **Styling:** Tailwind CSS (for rapid, responsive design)
-* **Data Pipeline:** [n8n](https://n8n.io/) (for orchestrating API calls and data transformation)
-* **Design:** Figma (UI/UX Prototyping)
+* **Frontend:** [Nuxt 4](https://nuxt.com/) (Vue.js)
+* **Styling:** Tailwind CSS
+* **BI Platform:** [Metabase](https://www.metabase.com/)
+* **Data Pipeline:** [n8n](https://n8n.io/) (Orchestrating API calls and transformation)
+* **Database:** PostgreSQL 16
+* **Design:** Figma
 
 ## 📄 License
 
